@@ -5,7 +5,10 @@ import { Photo } from '../../models/photo';
 
 @Component({
     selector: 'photo-list',
-    templateUrl: './photo-list.component.html'
+    templateUrl: './photo-list.component.html',
+    styleUrls: [
+    '../../../../node_modules/bulma/css/bulma.css'
+  ]
 })
 export class PhotoList {
     photos: Photo[];

@@ -1,0 +1,37 @@
+<div class='photo-list'>
+    <div *ngFor='let photo of photos'>
+        <div class='columns'>
+
+            <div class='column is-2'>
+            </div>
+
+            <div class='column is-10'>
+                <div class='box'>
+
+                    <img src='http://localhost:8080/images/{{photo.imageName}}' class='image is-4by3'
+                    (click)='onSelect(photo)' style='cursor: pointer' >
+
+                    <div class='columns'>
+                        <div class='column is-12'>
+                            <div class='columns'>
+                                <div class='column is-4'>
+                                    <div class='is-half'>
+                                        <strong>{{photo.title}}</strong>
+                                        <br/>
+                                        {{photo.description}}
+                                    </div>
+                                    <div class='is-half'>
+                                        {{photo.likes}} &nbsp; Likes
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
